@@ -1,0 +1,333 @@
+/*#24a2ed 05a2fe 0789feblue*/
+body{
+	font-family: 'Fira Sans Condensed', sans-serif;
+	font-size:18px;
+	width:90%;
+
+	margin: 0 auto;
+}
+
+a{
+	color: #000;
+	text-decoration: none;
+	
+}
+.upper_menu{
+	display:flex;
+}
+.fenster{
+	width:7%;
+	height:7%;
+	margin-left:10%;
+	align-items:center;
+	
+	
+}
+
+/*Dropdowns Mega Menu*/
+.dropdown {	
+	left:5%;
+	padding:0px;
+	line-height:50px;
+	position: relative;
+	width: 200px;
+	display: inline-block;
+	text-align:center;
+	z-index: 6;
+}
+
+.dropdown-content {
+	border-radius:0 0 6px 6px;	
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;   
+	line-height:30px;
+	cursor:pointer;
+	 
+	
+}
+
+.dropdown-content li, .box6 li {
+	list-style-type:none;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;	
+}
+
+/*Big central changing image to make it move delete 1 from animation name*/
+.logo_cover{
+	position: relative;
+	width: 100%;
+	height: 80%;
+	overflow:hidden;
+}
+
+.logo {
+	top:-10%;
+	position: relative;
+	left:-5%;
+	width: 120%;
+	height:auto;	
+	animation-name:logo_move1;
+	animation-duration:30s;
+	animation-iteration-count: 100;
+}
+@keyframes logo_move {
+	0%{left:-30px;top:-100px;}
+	25%{left:0px;top:-50px;width:125%}
+	50%{left:0px;top:-100px;width:120%}
+	100%{left:-30px;top:-100px;}	
+}
+/*Changing boxes on central image*/
+.changing_box{	  
+	width:30%;
+	height:50%;
+	position:absolute;
+	z-index:3;
+	left:55%;
+	top:40%;
+	background-color: #f9f9f9;
+	opacity:1;
+	font-size:36px;
+	text-align:center;	
+}
+.changing_box2{
+	background-image:url(fenster.png);
+    background-repeat:no-repeat;
+	background-position: center; 
+	width:30%;
+	height:50%;
+	position:absolute;
+	z-index:3;
+	left:55%;
+	top:40%;
+	background-color: #f9f9f9;
+	opacity:0.4;	
+	animation-name:box_move;
+	animation-duration:10s;
+	animation-iteration-count: 100;	 
+}
+@keyframes box_move {
+	0%{ opacity:1;	}
+	45%{ opacity:1;	}
+	50%{ opacity:0;}
+	90%{ opacity:0;}
+	100%{ opacity:1;}
+	
+}
+
+/*Text on central message*/
+.textbox{
+	position:absolute;
+	left:15%;
+	top:20%;
+	z-index:5;
+	display:flex;
+	flex-direction: column;	
+}
+
+.textprime{
+	font-size:400%;
+}
+
+.textsecond{
+	font-size:200%;	
+}
+/*First boxes that are strict under the main image*/
+.first_boxes {
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: row;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top:5%;
+	margin-bottom:5%;
+}
+
+.box1{
+	flex:1;
+	display:block;
+	font-size:100%;
+	margin-left:0%;
+}
+
+.box2{
+	flex:1;
+	font-size:100%;
+	margin-left:5%;
+}
+.box2:hover{
+	opacity:0.9;
+}
+.box3{
+	flex:1;
+	font-size:100%;
+	margin-left:5%;
+}
+
+/*second  part */
+.second_boxes{
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top:5%;
+	margin-bottom:5%;
+}
+
+.box4, .box5, .box6{
+	flex:1;
+	width: 100%;
+	height: auto;
+	border-bottom:3px solid #94AEC9;
+	text-align:center;
+	font-size:24px;
+}
+/*Rotating Cards in second part */
+.wrap{
+	position:relative;
+	width:100%;
+	height:100%;	
+	padding-bottom:2%;
+	display:flex;
+}
+
+.card1, .card2, .card3{
+	width:400px;
+	height:400px;
+	margin-left:10px;
+	position:relative;
+	perspective:1000px;
+}
+
+.front1, .back1, .front2, .back2, .front3, .back3{
+	position:absolute;
+	width:100%;
+	height:100%;
+	left:0px;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	transition:1s;
+	backface-visibility:hidden;
+	border-radius:10px;	
+}
+
+.front1{
+	background-image:url(broken-window.jpg);	
+	width:100%;
+	height:100%;
+}
+
+.back1 {
+	background-image:url(broken-window2.jpg);			
+	background-color:green;
+	-webkit-transform:rotateY(180deg);
+}
+
+.card1:hover .front1{
+	transform:rotateY(180deg);	
+}
+
+.card1:hover .back1 {
+	transform:rotateY(360deg);	
+}
+
+.front2{
+	  background-image:url(broken-window.jpg);	
+	width:100%;
+	height:100%;
+
+}
+
+.back2 {
+	  background-image:url(broken-window2.jpg);			
+		background-color:green;
+		-webkit-transform:rotateY(180deg);
+}
+.card2:hover .front2{
+	transform:rotateY(180deg);	
+}
+
+.card2:hover .back2 {
+	transform:rotateY(360deg);	
+}
+
+.front3{
+	background-image:url(broken-window.jpg);	
+	width:100%;
+	height:100%;
+
+}
+.back3 {
+	background-image:url(broken-window2.jpg);			
+	background-color:green;
+	-webkit-transform:rotateY(180deg);
+}
+.card3:hover .front3{
+	transform:rotateY(180deg);	
+}
+
+.card3:hover .back3 {
+	transform:rotateY(360deg);	
+}
+
+/*Temporary class for images*/
+.main_images{
+	width: 200px;
+	height: auto;
+	float:left;
+}
+
+.footer_cover{
+	position: relative;
+	width: 100%;
+	height: 60px;
+	overflow:hidden;
+	background-color:#94AEC9;
+}
+/* Price */
+.prices_module{
+	position:absolute;
+	display:none;
+	width:80%;
+	height:80%;
+	border:3px solid black;
+	z-index:6;
+	background-color: #f9f9f9;
+	overflow: auto;	
+	left:10%;
+}
+
+.price_list{
+	display:block;
+	position:relative;
+	text-align:center;
+	
+}
+
+/* The Close Button */
+.close {
+     color: black;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+	padding-right:6px;
+	z-index:8;
+}
+
+.close:hover, .close:focus {
+   
+	color: #aaaaaa;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+

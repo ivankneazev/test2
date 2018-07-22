@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="pricelist.xsl"?>
+<priceList>
+<header>Прайс лист</header>
+	<description>Наша фирма предлагает любые виды ремонта пластиковых окон и алюминиевых конструкций:</description>
+<columns>Виды работ 	ед.изм	мин.	макс.	Валюта</columns>
+	<chapter>РЕГУЛИРОВКА СТВОРОК
+		<position1>1	Простая регулировка (ключами) ПВХ	шт. 	100		лей</position1>
+		<position2>2	Сложная регулировка (переклинка) ПВХ	шт.	150		лей</position2>
+		<position3>3	Регулировка (алюминиевых) AL	шт.	150		лей</position3>
+	</chapter>
+	<chapter>РЕГУЛИРОВКА ДВЕРЕЙ
+		<position1>1	Регулировка ПВХ (ключами)	шт.	100		лей</position1>
+		<position2>2	Сложная регулировка ПВХ (восстановление геометрии двери)	шт.	150		лей</position2>
+		<position3>3	Регулировка алюминиевой	шт.	100		лей</position3>
+	</chapter>
+	<chapter>ЗАМЕНА ФУРНИТУРЫ
+		<position1>1	Базовая замена фурнитуры 	шт. 	25	100	euro</position1>
+		<position2>2	Установка противозломной фурнитуры 	шт.	25	100	euro</position2>
+		<position3>3	Ограничитель открывания (гребенка)	шт.     	50		лей</position3>
+		<position4>4	Средний прижим	шт.	50		лей</position4>
+	</chapter>
+	<chapter>РУЧКИ
+		<position1>1	Ручка	шт.	100		лей</position1>
+		<position2>2	Ручка с ключом для ПВХ	шт.	120		лей</position2>
+		<position3>3	Ручка с защелкой на дверь	шт.	150		лей</position3>
+	</chapter>
+	<chapter>СТЕКЛОПАКЕТЫ
+		<position1>1	Стеклопакет однокамерный	м.кв.	380	500	лей</position1>
+		<position2>2	Стеклопакет двухкамерный	м.кв.	500	640	лей</position2>
+		<position3>3	Стеклопакет low-e 	м.кв.			30%</position3>
+		<position4>4	Стеклопакет 4s(select) 	м.кв.			45%</position4>
+		<position5>5	Стеклопакет sun-stop	м.кв.			80%</position5>
+		<position6>6	Стеклопакет толщина 32мм 	м.кв.			20%</position6>
+		<position7>7	Стеклопакет толщина 41мм	м.кв.			30%</position7>
+		<position8>	Стеклопакеты площадью менее 0,5м.кв. считаются как 0,5 м.кв. 				</position8>
+	</chapter>
+	<chapter>ГЕРМЕТИЗАЦИЯ
+		<position1>1	Окно	м.п.	40		лей</position1>
+		<position2>2	Отлив	м.п.	40		лей</position2>		
+	</chapter>
+	<chapter>ЗАМЕНА
+		<position1>1	Замена уплотнителя ПВХ	м.п.	12		лей</position1>
+		<position2>2	Переборка, очистка, смазка фурнитуры (со снятием створок)	створка	200		лей</position2>		
+	</chapter>
+	<chapter>ДОВОДЧИКИ НА ДВЕРЬ
+		<position1>1	Установка доводчика с регулировкой	шт.	40		euro</position1>			
+	</chapter>
+	<chapter>Сетки и жалюзи
+		<position1>1	Москитная сетка	шт.	20		euro</position1>
+		<position2>2	Жалюзи	шт.			</position2>		
+	</chapter>
+	<footer>Вызов специалиста и экспертиза стоит 100 лей!
+			В случае оформления заказа вызов специалиста и экспертиза бесплатно!
+	</footer>
+</priceList>
